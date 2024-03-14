@@ -1,11 +1,11 @@
 
 import './App.css';
-import NavBar from './components/NavBar';
-import Shop from './components/Shop';
+import Shop from './Shop';
+import Navbar from  "./Navbar";
 function App() {
   return (
     <>
-      <NavBar/>
+      <Navbar/>
     <div className="container">
     
       <Shop/>
