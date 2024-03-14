@@ -1,7 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const NavBar = () => {
+    const amount = useSelector(state => state.amount)
     return (
+        
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="/">Canara Bank Vikash</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +33,7 @@ const NavBar = () => {
 
                 </ul>
                <div>
-                <button   className='btn-primary'>Your Bilance: 1000000</button>
+                <button   className='btn-primary'>Your Bilance: {amount}</button>
                </div>
             </div>
         </nav>
