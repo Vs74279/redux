@@ -30,7 +30,7 @@ const NavBar = () => {
 
                 </ul>
                <div>
-                <button  disabled={true} className='btn-primary'>Your Bilance: 1000000</button>
+                <button   className='btn-primary'>Your Bilance: 1000000</button>
                </div>
             </div>
         </nav>
